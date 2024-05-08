@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG KÝ</title>
+    <link rel="stylesheet" href="..\CSS\dang-ky.css">
+</head>
+<body>
+    <script src="..\js\jquery-3.6.1.min.js"></script>
+    <script src="..\js\dang-ky.js"></script>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <a href="..\HTML\index.html" id="logo">
+                </a>
+                <nav>
+
+                    <!-- LINK TỚI CÁC MỤC KHÁC -->
+
+                    <ul id="main-menu">
+                        <li><a href="..\HTML\index.html">TRANG CHỦ</a></li>
+                        <li><a href="..\HTML\gioi-thieu.html">GIỚI THIỆU</a></li>
+                        <li><a href="..\HTML\khoa-hoc.html">KHOÁ HỌC</a></li>
+                        <li><a href="..\HTML\lich-hoc.html">LỊCH HỌC</a></li>
+                        <li><a href="..\HTML\dang-ky.html">ĐĂNG KÝ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+	<div class="wrapper">
+	<div id="wrapper-heading">
+		<form action="" id="form-register">
+		<!-- <h1  class ="form-heading"> Đăng ký học thử miễn phí </h1> -->
+		</form>
+	</div>
+	<form onsubmit="signup()" id="form1">
+		<div class="user-details">
+		<div class="inputbox">
+		<span class="details"> Tên của bạn</span>
+		<input id="Username" type="text" class="loi"  placeholder="Your name"></input>
+		</div>
+		<div class="inputbox">
+		<span class="details"> Email</span>
+		<input id="Email" type="email" class="loi" placeholder="Email"></input>
+		</div>
+		<div class="inputbox">
+			<span class="details"> Số điện thoại</span>
+		<input id="Phone" type="text" class="loi"  placeholder="Phone number" patten="[0,9][1-10]"></input>
+		</div>
+		<div class="inputbox">
+			<span class="details"> Môn nhạc cụ cần học thử </span>
+
+        <select id="Style" class="list" name="nhạc cụ"> 
+		 <option value="music" >--Nhac cụ--</option>
+		 <option value="piano">Piano</option>
+		 <option value="guitar">Guitar</option>
+		 <option value="organkeyboard">Organ keyboard</option>
+		 <option value="thoisao">Thổi sáo</option>
+		 <option value="violin">Violin</option>
+		 <option value="cajon">Trống Cajon</option>
+		 <option value="danbau">Đàn bầu</option>
+		 <option value="dantranh">Đàn tranh</option>
+		 <option value="phuongtay"> Nhac cụ phương tây</option>
+		 <option value="dantoc"> Nhac cụ dân tộc</option>
+		</select>
+		</div>
+		</div>
+		<button class="sub">
+		<input type="button" value="Đăng ký" onclick="signup()" /></button>
+	</form>
+	</div>
+	<div class="footer">
+		<div id="content" class="container">
+			<div id="logo2">
+			</div>
+			<div id="info">
+				<h3>Học viện nghệ thuật Artiest</h3>
+				<p></p>11 Nguyễn Đình Chiểu, phường Đakao, quận 1, TP. HCM </p>
+				<br>
+				<p>Artiest Academy không chỉ giúp khơi dậy niềm đam mê nghệ thuật mà còn mang đến một môi trường học
+					tập, vui chơi bổ ích, đóng góp cho sự phát triển toàn diện của các bé.</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
