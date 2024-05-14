@@ -168,12 +168,24 @@ form .sub input{
 	font-size: 20px;
 	border-style : hidden!important;
 }
-#form1 .baoloi{ margin: 0px auto; color: red}
-#form1 .loi{
-	width: 400px; padding: 6px;
-	border:1px; 
+#form-1 .form-control{
+	width: 450px; padding: 6px;
+	border:1px solid  #1dbfaf; 
 	background-color: #FF9900;
+	border-color: #1dbfaf;
 }
+
+#form-1.form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .inputbox.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .inputbox.invalid .form-message {
+    color: #f33a58;
+  }
 
 .user-details {
 	margin-top: 50px;
